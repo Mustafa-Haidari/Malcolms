@@ -39,7 +39,11 @@
 		margin: 0;
 	}
 
-
+@media only screen and (max-width: 5000px) and (min-width: 812px)  {
+	div.countdown {
+		padding: 15% 3%;
+	}
+}
 
 @media only screen and (max-width: 812px) and (min-width: 600px)  {
 	div.countdown {
