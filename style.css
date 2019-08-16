@@ -24,7 +24,7 @@
 
 	div.countdown h3 {
 		font-family: 'Raleway', sans-serif;
-		font-size: 5em;
+		font-size: 4em;
 		margin-bottom: 5%
 	}
 	
@@ -42,5 +42,6 @@
 @media only screen and (max-width: 600px) and (min-width: 400px)  {
 	div.countdown {
 		padding: 15% 3%;
+		font-size: .5em;
 	}
 }
