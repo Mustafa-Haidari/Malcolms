@@ -2,7 +2,7 @@
 		margin: 0;
 
 	}
-	
+
 	div.outer-div {
 		background: linear-gradient(to top, #ff0066 0%, #ffcc66 100%);
 		overflow: scroll;
@@ -27,9 +27,22 @@
 		font-size: 5em;
 		margin-bottom: 5%
 	}
-	
+
 	p.font {
 		font-family: 'Raleway', sans-serif;
+		margin-bottom: 5%;
+	}
+
+	.outer-div .countdown p.font > span sup {
+		font-size 2em !important;
+	}
+
+	.font_size {
+		font-size: 3em;
+	}
+
+	.font_size1 {
+		font-size: 4em;
 	}
 
 	p#demo {
@@ -39,22 +52,28 @@
 		margin: 0;
 	}
 
-@media only screen and (max-width: 5000px) and (min-width: 812px)  {
-	div.countdown {
-		padding: 15% 3%;
+	.clock_style {
+		display: inline-block;
+		background: #333;
+		border-radius: 15px;
 	}
-}
 
-@media only screen and (max-width: 812px) and (min-width: 600px)  {
-	div.countdown {
-		padding: 15% 3%;
-		font-size: .7em;
+	@media only screen and (max-width: 5000px) and (min-width: 812px) {
+		div.countdown {
+			padding: 15% 3%;
+		}
 	}
-}
 
-@media only screen and (max-width: 600px) and (min-width: 1px)  {
-	div.countdown {
-		padding: 25% 3%;
-		font-size: .5em;
+	@media only screen and (max-width: 812px) and (min-width: 600px) {
+		div.countdown {
+			padding: 15% 3%;
+			font-size: .7em;
+		}
 	}
-}
+
+	@media only screen and (max-width: 600px) and (min-width: 1px) {
+		div.countdown {
+			padding: 25% 3%;
+			font-size: .5em;
+		}
+	}
