@@ -1,47 +1,5 @@
 <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-<style>
-	* {
-		margin: 0;
-
-	}
-	
-	div.outer-div {
-		background: linear-gradient(to top, #ff0066 0%, #ffcc66 100%);
-		overflow: scroll;
-		width: 100%;
-		height: 100%;
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
-
-	div.countdown {
-		display: block;
-		color: white;
-		text-align: center;
-		border-radius: 25px;
-		margin: auto auto 5% auto;
-		padding: 25% 3%;
-	}
-
-	div.countdown h3 {
-		font-family: 'Raleway', sans-serif;
-		font-size: 5em;
-		margin-bottom: 5%
-	}
-	
-	p.font {
-		font-family: 'Raleway', sans-serif;
-	}
-
-	p#demo {
-		font-size: 4em;
-		padding: 15px;
-		padding-top: 5px;
-		margin: 0;
-	}
-
-</style>
+<link rel="stylesheet" href="/style.css">
 
 <div class="outer-div">
 <div class="countdown">
@@ -51,24 +9,4 @@
 </div>
 
 
-<script>
-	var countDownDate = new Date("August 29, 2019 23:05:00").getTime();
-
-	var x = setInterval(function() {
-		var now = new Date().getTime();
-		var distance = countDownDate - now;
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-		document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
-			minutes + "m " + seconds + "s ";
-
-		if (distance < 0) {
-			clearInterval(x);
-			document.getElementById("demo").innerHTML = "Malcolm is on his way to the United States of America!";
-		}
-	}, 1000);
-
-</script>
+<script src="script.js"></script>
