@@ -1,4 +1,4 @@
-var countDownDate = new Date("August 29, 2019 11:05:00").getTime();
+var countDownDate = new Date("August 29, 2022 11:05:00").getTime();
 var countDownDateT = new Date("August 29, 2019 11:05:00");
 var countDownDateTag = document.getElementById("countDownDate").innerHTML = countDownDateT.toDateString() + " at " + countDownDateT.getHours() + ":" + String(countDownDateT.getMinutes()).padStart(2, "0") + "am";
 
